@@ -8,6 +8,13 @@
   border-radius: 5px;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.btn-default:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgb(24, 24, 36);
 }
 
 // BUTTON STYLES
@@ -43,7 +50,7 @@
 .btn-medium {
   padding: 10px 25px;
   font-size: 16px;
-  font-weight: bolder;
+  font-weight: 700;
 }
 // LARGE BUTTON
 .btn-large {

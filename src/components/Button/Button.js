@@ -44,7 +44,7 @@ const Button = (
       <button
         className={`btn-default ${checkButtonStyle} ${checkButtonSize}`}
         type={type}
-        onClick={undefined}
+        onClick={onClick}
       >
         {icon 
         ? <img src={icon} alt="icon" /> 
