@@ -1,0 +1,23 @@
+@import "./../../../../variables.scss";
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  align-items: center;
+  margin-top: 5em;
+}
+.feature-card-inner-wrapper {
+  margin-top: 3em;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-head {
+  font-size: 2.5rem;
+  color: $secondary-color;
+}
+
