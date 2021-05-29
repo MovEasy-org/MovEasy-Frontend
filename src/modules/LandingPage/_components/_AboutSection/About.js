@@ -3,7 +3,7 @@ import AboutImage from "../../assets/about.svg";
 import "./About.scss"
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about-container">
       <div className="about-image">
         <img src={AboutImage} alt="" />
       </div>
