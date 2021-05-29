@@ -1,0 +1,53 @@
+@import "../../../../variables.scss";
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.community-head {
+  font-size: 2.5em;
+  color: $secondary-color;
+}
+.slider {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.main-test {
+  display: flex;
+  flex-direction: column;
+  background-color: $card-background;
+  box-shadow: 0 0 10px $shadow-color;
+  min-width: 700px;
+  padding: 3.5em 2em;
+  color: $white;
+  margin: 5em 2em;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.test-head {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.test-para {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 1em;
+}
+.test-author {
+  margin-left: auto;
+  margin-top: 1em;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .main-test{
+        min-width: 300px;
+    }
+}
