@@ -2,53 +2,60 @@
 
 // COMMON STYLES
 .btn-default {
-  display: flex;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.btn-default:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 20px rgb(24, 24, 36);
 }
 
 // BUTTON STYLES
 
 // PRIMARY BUTTON
 .btn-primary {
-  background-color: $white;
-  color: $primary-color;
+	background-color: $white;
+	color: $primary-color;
 }
 
 // PRIMARY INVERT BUTTON
 .btn-primary-invert {
-  background-color: $primary-color;
-  color: $white;
+	background-color: $primary-color;
+	color: $white;
 }
 
 // CYAN BUTTON
 .btn-cyan {
-  background-color: $white;
-  color: $secondary-color;
-  border: 2px solid $secondary-color;
+	background-color: $white;
+	color: $secondary-color;
+	border: 2px solid $secondary-color;
 }
 
 // BUTTON SIZES
 
 // SMALL BUTTON
 .btn-small {
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: bolder;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: bolder;
 }
 // MEDIUM BUTTON
 .btn-medium {
-  padding: 10px 25px;
-  font-size: 16px;
-  font-weight: bolder;
+	padding: 10px 25px;
+	font-size: 16px;
+	font-weight: 700;
 }
 // LARGE BUTTON
 .btn-large {
-  padding: 10px 30px;
-  width: 100%;
-  font-size: 16px;
-  font-weight: bolder;
+	padding: 10px 30px;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bolder;
 }
