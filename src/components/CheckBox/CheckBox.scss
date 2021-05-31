@@ -25,3 +25,23 @@ input[type="checkbox"] {
   border-radius: 5px;
   box-shadow: 0px 0px 10px $shadow-color;
 }
+
+
+.trans-active-check {
+  color: white;
+  display: inline;
+  background-color: $background-color;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px $shadow-color;
+}
+
+.trans-inactive-check {
+  display: inline;
+  color: $primary-color ;
+  background-color: white;
+  border: 2px solid $primary-color;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px $shadow-color;
+}
