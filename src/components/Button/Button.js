@@ -23,8 +23,8 @@ const Button = ({ type, ButtonStyle, ButtonSize, children, onClick, icon }) => {
 				type={type}
 				onClick={onClick}
 			>
-				{icon ? <img src={icon} alt="icon" /> : null}
-				{children}
+				{icon ? icon: null}
+				<span className="childern-label">{children}</span>
 			</button>
 		</>
 	);
