@@ -1,3 +1,27 @@
-input[type="checkbox"]{
+@import "../../variables.scss";
+
+input[type="checkbox"] {
   display: none;
+}
+.checkbox-label{
+  cursor: pointer;
+  user-select: none;
+}
+
+.active-check {
+  color: white;
+  display: inline;
+  background-color: $background-color;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px $shadow-color;
+}
+
+.inactive-check {
+  display: inline;
+  color: $background-color;
+  background-color: $secondary-color;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px $shadow-color;
 }
