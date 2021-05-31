@@ -1,5 +1,5 @@
 .input--group {
-	margin: 4rem;
+	margin: 0 0 1.5rem 0;
 	.label--group {
 		display: flex;
 		align-items: center;
@@ -20,6 +20,9 @@
 		&::placeholder {
 			font-family: "Poppins", sans-serif;
 			padding-left: 0.125rem;
+		}
+		&:focus{
+			outline: 1px solid cyan;
 		}
 	}
 
