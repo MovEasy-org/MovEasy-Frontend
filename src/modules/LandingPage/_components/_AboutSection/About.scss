@@ -1,0 +1,59 @@
+@import "../../../../variables.scss";
+
+.about-container {
+	display: flex;
+	// width: 80%;
+	// margin: auto;
+	flex-wrap: wrap;
+	margin-top: 5em;
+}
+.about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+.about-image img {
+	width: 400px;
+}
+.about-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	padding: 5em;
+}
+.about-head {
+	color: $secondary-color;
+}
+.about-para {
+	color: white;
+	font-size: 0.9em;
+	font-weight: 5600;
+}
+
+@media only screen and (max-width: 1024px) {
+	.about-container {
+		width: 90%;
+	}
+	.about-content {
+		padding: 3em;
+	}
+	.about-image img {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.about-container {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	.about-content {
+		width: 100%;
+		padding: 2em 3em;
+		text-align: center;
+	}
+	.about-image {
+		width: 100%;
+	}
+}

@@ -18,7 +18,7 @@ const Routes = () => {
 				</>
 			) : (
 				<>
-					<Route path="/" component={LandingPage} />
+					<Route exact path="/" component={LandingPage} />
 					<Redirect to="/" />
 				</>
 			)}

@@ -1,0 +1,92 @@
+@import "./../../variables.scss";
+
+// Default Footer styles
+
+.footer-background {
+	background-image: url("./assets/wave.svg");
+	background-size: cover;
+}
+
+.footer-wrapper {
+	padding-top: 15rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	align-items: center;
+	.info {
+		width: 40%;
+		&-logo-style {
+			color: $secondary-color;
+		}
+		&-text {
+			width: 70%;
+		}
+	}
+	.links {
+		width: 25%;
+		&-heading {
+			margin-bottom: 1rem;
+		}
+		&-list {
+			color: $secondary-color;
+			font-weight: 500;
+		}
+	}
+	.illustration {
+		height: 15rem;
+		.men {
+			height: 100%;
+		}
+	}
+}
+
+.footer-bottom {
+	padding: 2rem 0 1rem 0;
+	text-align: center;
+	&-owner {
+		color: $secondary-color;
+	}
+}
+
+// Footer Strip Styles
+
+.footer-strip {
+	padding: 2rem 0 1rem 0;
+	text-align: center;
+	font-weight: 500;
+	color: #fff;
+	&-owner {
+		color: $secondary-color;
+	}
+}
+
+// Media Queries
+
+@media only screen and (max-width: 768px) {
+	.footer-background {
+		padding-top: 5rem;
+		background-size: auto;
+	}
+
+	.footer-wrapper {
+		flex-direction: column;
+		gap: 1rem;
+		.info {
+			width: 100%;
+			&-text {
+				width: 100%;
+			}
+		}
+		.links {
+			width: 100%;
+		}
+		.illustration {
+			display: none;
+			align-self: flex-end;
+			height: 10rem;
+			.men {
+				height: 100%;
+			}
+		}
+	}
+}
