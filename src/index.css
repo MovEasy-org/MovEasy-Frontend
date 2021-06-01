@@ -14,3 +14,18 @@ body {
 body::-webkit-scrollbar {
 	display: none;
 }
+
+ul {
+	list-style: none;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper {
+	width: 80%;
+	max-width: 80rem;
+	margin: 0 auto;
+}
