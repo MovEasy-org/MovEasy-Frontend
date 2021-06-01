@@ -33,10 +33,10 @@ export const FooterDefault = () => {
 			</div>
 
 			<div className="footer-bottom wrapper">
-				<h4>
+				<h6>
 					© All rights reserved 2021 | Made With 💙 By{" "}
 					<span className="footer-bottom-owner">MSMY</span>
-				</h4>
+				</h6>
 			</div>
 		</footer>
 	);
@@ -44,11 +44,11 @@ export const FooterDefault = () => {
 
 export const Footer = () => {
 	return (
-		<footer>
-			<h4 className="footer-strip">
+		<footer className="wrapper">
+			<h6 className="footer-strip">
 				© All rights reserved 2021 | Made With 💙 By{" "}
 				<span className="footer-strip-owner">MSMY</span>
-			</h4>
+			</h6>
 		</footer>
 	);
 };

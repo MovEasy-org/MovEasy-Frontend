@@ -10,8 +10,8 @@
 .footer-wrapper {
 	padding-top: 15rem;
 	display: flex;
-	gap: 2rem;
 	justify-content: space-between;
+	gap: 2rem;
 	align-items: center;
 	.info {
 		width: 40%;
@@ -57,5 +57,36 @@
 	color: #fff;
 	&-owner {
 		color: $secondary-color;
+	}
+}
+
+// Media Queries
+
+@media only screen and (max-width: 768px) {
+	.footer-background {
+		padding-top: 5rem;
+		background-size: auto;
+	}
+
+	.footer-wrapper {
+		flex-direction: column;
+		gap: 1rem;
+		.info {
+			width: 100%;
+			&-text {
+				width: 100%;
+			}
+		}
+		.links {
+			width: 100%;
+		}
+		.illustration {
+			display: none;
+			align-self: flex-end;
+			height: 10rem;
+			.men {
+				height: 100%;
+			}
+		}
 	}
 }

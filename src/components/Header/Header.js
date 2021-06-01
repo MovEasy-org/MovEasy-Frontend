@@ -2,11 +2,12 @@ import React from "react";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import "./Header.scss";
+
 const Header = () => {
 	return (
 		<nav className="nav-container">
 			<div className="nav-head">
-				<text className="cyan">Mov</text>Easy
+				<span className="cyan">Mov</span>Easy
 			</div>
 			<div className="link-items">
 				<div className="link active-nav-btn">
@@ -22,22 +23,24 @@ const Header = () => {
 					<a href="#why-wrapper">Testimonials</a>
 				</div>
 				<div className="link">
-					<a href="/">Contact</a>
+					<a href="#contact-us">Contact</a>
 				</div>
 			</div>
 			<div className="btn-log">
 				<div className="nav-btn">
-					<Link to="/">Login</Link>
+					<Link to="/login">Log in</Link>
 				</div>
-				<div className="nav- btn">
-					<Button
-						type="submit"
-						ButtonSize="btn-medium"
-						ButtonStyle="btn-primary"
-						onClick=""
-					>
-						SignUp
-					</Button>
+				<div className="nav-btn">
+					<Link to="/signup">
+						<Button
+							type="submit"
+							ButtonSize="btn-medium"
+							ButtonStyle="btn-primary"
+							// onClick={}
+						>
+							Sign up
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</nav>

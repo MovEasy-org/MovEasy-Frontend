@@ -1,13 +1,13 @@
 import React from "react";
-import "./_FeatureCard.scss"
-const _FeatureCard = ({image,heading,para}) => {
+import "./_FeatureCard.scss";
+const _FeatureCard = ({ image, heading, para }) => {
 	return (
 		<div className="feature-container" id="feature-container">
 			<div className="feature-image">
 				<img src={image} alt="images"></img>
 			</div>
 			<div className="feature-content">
-				<h2 className="feature-head">{heading}</h2>
+				<h4 className="feature-head">{heading}</h4>
 				<p className="feature-para">{para}</p>
 			</div>
 		</div>

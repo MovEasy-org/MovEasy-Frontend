@@ -7,6 +7,8 @@ import FeatureCards from "./_components/_FeatureCard/FeatureWrapper";
 import WhyWrapper from "./_components/_WhyMovEasy/WhyWrapper";
 import Testimonials from "./_components/_TestimonialCard/_TestimonialCard";
 import ContactUs from "./_components/_ContactUs/ContactUs";
+import { Footer, FooterDefault } from "./../../components/Footer/Footer";
+
 const LandingPage = () => {
 	return (
 		<div className="landing-page">
@@ -16,7 +18,9 @@ const LandingPage = () => {
 			<FeatureCards />
 			<WhyWrapper />
 			<Testimonials />
-			<ContactUs/>
+			<ContactUs />
+			<FooterDefault />
+			<Footer />
 		</div>
 	);
 };

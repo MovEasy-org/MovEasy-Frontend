@@ -30,7 +30,7 @@ const Input = ({
 		labelStyle = "dark--label";
 		fieldStyle = "outline--input";
 	}
-	
+
 	return (
 		<div className="input--group">
 			<div className="label--group">
@@ -38,24 +38,25 @@ const Input = ({
 				<div className="label--line"></div>
 			</div>
 
-			{isTextarea?
-			(<textarea
-				rows="7"
-
-				name={name}
-				value={value}
-				className={`input text-area ${fieldStyle}`}
-				placeholder={placeholder}
-				onChange={handleChange}
-			/>)
-			:(<input
-				name={name}
-				type={type}
-				value={value}
-				className={`input  ${fieldStyle}`}
-				placeholder={placeholder}
-				onChange={handleChange}
-			/>)}
+			{isTextarea ? (
+				<textarea
+					rows="5"
+					name={name}
+					value={value}
+					className={`input text-area ${fieldStyle}`}
+					placeholder={placeholder}
+					onChange={handleChange}
+				/>
+			) : (
+				<input
+					name={name}
+					type={type}
+					value={value}
+					className={`input  ${fieldStyle}`}
+					placeholder={placeholder}
+					onChange={handleChange}
+				/>
+			)}
 		</div>
 	);
 };
