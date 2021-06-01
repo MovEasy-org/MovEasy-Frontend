@@ -2,6 +2,7 @@ import React from "react";
 import "./Input.scss";
 
 const Input = ({
+	isTextarea,
 	label,
 	placeholder,
 	inputStyle,
@@ -29,7 +30,7 @@ const Input = ({
 		labelStyle = "dark--label";
 		fieldStyle = "outline--input";
 	}
-
+	
 	return (
 		<div className="input--group">
 			<div className="label--group">
@@ -37,14 +38,24 @@ const Input = ({
 				<div className="label--line"></div>
 			</div>
 
-			<input
+			{isTextarea?
+			(<textarea
+				rows="7"
+
+				name={name}
+				value={value}
+				className={`input text-area ${fieldStyle}`}
+				placeholder={placeholder}
+				onChange={handleChange}
+			/>)
+			:(<input
 				name={name}
 				type={type}
 				value={value}
-				className={`input ${fieldStyle}`}
+				className={`input  ${fieldStyle}`}
 				placeholder={placeholder}
 				onChange={handleChange}
-			/>
+			/>)}
 		</div>
 	);
 };
