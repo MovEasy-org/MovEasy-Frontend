@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 import "./Header.scss";
 
 const Header = () => {
@@ -28,16 +28,15 @@ const Header = () => {
 			</div>
 			<div className="btn-log">
 				<div className="nav-btn">
-					<Link to="/login">Log in</Link>
+					<Link to="/login">
+						<Button ButtonSize="btn-medium" ButtonStyle="btn-link">
+							Log in
+						</Button>
+					</Link>
 				</div>
 				<div className="nav-btn">
 					<Link to="/signup">
-						<Button
-							type="submit"
-							ButtonSize="btn-medium"
-							ButtonStyle="btn-primary"
-							// onClick={}
-						>
+						<Button ButtonSize="btn-medium" ButtonStyle="btn-primary">
 							Sign up
 						</Button>
 					</Link>
