@@ -3,7 +3,7 @@ import "./Button.scss";
 
 const Button = ({ type, ButtonStyle, ButtonSize, children, onClick, icon }) => {
 	// BUTTON STYLES
-	const STYLES = ["btn-primary", "btn-primary-invert", "btn-cyan"];
+	const STYLES = ["btn-primary", "btn-primary-invert", "btn-cyan", "btn-link"];
 
 	// BUTTON SIZES
 	const SIZE = ["btn-small", "btn-large", "btn-medium"];
@@ -23,7 +23,7 @@ const Button = ({ type, ButtonStyle, ButtonSize, children, onClick, icon }) => {
 				type={type}
 				onClick={onClick}
 			>
-				{icon ? icon: null}
+				{icon ? icon : null}
 				<span className="childern-label">{children}</span>
 			</button>
 		</>

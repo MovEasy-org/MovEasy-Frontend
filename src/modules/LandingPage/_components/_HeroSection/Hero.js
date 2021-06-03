@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../../../components/Button/Button";
+import CustomModal from "./../../../../components/CustomModal/CustomModal";
 import "./Hero.scss";
 
 const Hero = () => {
+	const [showModal, setShowModal] = useState(false);
+
+	const openModal = () => {
+		setShowModal((prev) => !prev);
+	};
+
 	return (
 		<div className="hero-container">
 			<div className="hero-hp wrapper">
@@ -15,12 +22,17 @@ const Hero = () => {
 						type="submit"
 						ButtonStyle="btn-primary"
 						ButtonSize="btn-medium"
-						onClick={undefined}
+						onClick={openModal}
 					>
 						Get Started
 					</Button>
 				</div>
 			</div>
+			<CustomModal
+				showModal={showModal}
+				setShowModal={setShowModal}
+				ModalContent={""}
+			/>
 		</div>
 	);
 };
