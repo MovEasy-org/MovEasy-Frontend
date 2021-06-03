@@ -1,0 +1,35 @@
+@import "../../../../variables.scss";
+
+.dialog-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $primary-color;
+}
+
+.get-started-head{
+    display: inline;
+    border-bottom: 4px solid $secondary-color;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+.get-image{
+    height: fit-content;
+}
+.get-started-image{
+    width: 100%;
+}
+
+.modal-btns{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 3rem;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.btn-ns{
+    margin: 0 0.5rem;
+}
