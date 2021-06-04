@@ -27,28 +27,46 @@ const Hero = () => {
 			<h2 className="get-started-head">{JsonData[index].title}</h2>
 			<p className="get-started-content">{JsonData[index].content}</p>
 			<div className="get-started-image">{JsonData[index].Image}</div>
-			<div className="modal-btns">
-				<div className="btn-ns">
-					<Button
-						type="submit"
-						ButtonSize="btn-medium"
-						ButtonStyle="btn-primary"
-						onClick={() => setShowModal()}
-					>
-						Skip
-					</Button>
+			{index === 2 ? (
+				<div className="modal-btns">
+					<div className="btn-ns">
+						<Button
+							type="submit"
+							ButtonSize="btn-medium"
+							ButtonStyle="btn-link"
+							onClick={() => increment()}
+						>
+							Finish
+						</Button>
+					</div>
 				</div>
-				<div className="btn-ns">
-					<Button
-						type="submit"
-						ButtonSize="btn-medium"
-						ButtonStyle="btn-link"
-						onClick={() => increment()}
-					>
-						Next
-					</Button>
+			) : (
+				<div className="modal-btns">
+					<div className="btn-ns">
+						<Button
+							type="submit"
+							ButtonSize="btn-medium"
+							ButtonStyle="btn-primary"
+							onClick={() => {
+								setShowModal();
+								setIndex(0);
+							}}
+						>
+							Skip
+						</Button>
+					</div>
+					<div className="btn-ns">
+						<Button
+							type="submit"
+							ButtonSize="btn-medium"
+							ButtonStyle="btn-link"
+							onClick={() => increment()}
+						>
+							Next
+						</Button>
+					</div>
 				</div>
-			</div>
+			)}
 		</div>
 	);
 
