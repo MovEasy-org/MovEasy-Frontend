@@ -11,7 +11,7 @@
 	align-items: center;
 	margin-bottom: 1em;
 	box-shadow: 0px 7px 10px rgb(22, 22, 43);
-	z-index: 20;
+	z-index: 10;
 
 	a {
 		text-decoration: none;
@@ -61,4 +61,8 @@
 	.nav-btn {
 		margin: 0 1em;
 	}
+}
+
+.css-bwmded {
+	z-index: 100 !important;
 }
