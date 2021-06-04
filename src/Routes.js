@@ -2,6 +2,8 @@ import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Login from "./modules/auth/Login/Login";
+import Signup from "./modules/auth/Signup/Signup";
 import LandingPage from "./modules/LandingPage/LandingPage";
 
 const Routes = () => {
@@ -26,6 +28,8 @@ const Routes = () => {
 				<>
 					<Header />
 					<Route exact path="/" component={LandingPage} />
+					<Route exact path="/login" component={Login} />
+					<Route exact path="/signup" component={Signup} />
 					<Redirect to="/" />
 					<Footer />
 				</>
