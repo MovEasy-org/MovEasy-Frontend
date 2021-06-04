@@ -1,0 +1,24 @@
+.completed{
+padding: 0.2rem 0.5rem;
+background-color: greenyellow ;
+color: white;
+display: flex;
+width: max-content;
+font-size: 0.8rem;
+border-radius: 5px;
+}
+
+
+.pending{
+    padding: 0.2rem 0.5rem;
+    background-color: red;
+    color: white;
+    display: flex;
+    width: max-content;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.status-label{
+    font-weight: 200 !important;
+}
