@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toaster } from "evergreen-ui";
 import "./PostJob.scss";
 import job from "../PostJob/assets/job.svg";
 import FormLayout from "../../../components/FormLayout/FormLayout";
@@ -7,22 +8,46 @@ import Button from "../../../components/Button/Button";
 import CheckBox from "../../../components/CheckBox/CheckBox";
 
 const PostJob = () => {
-  const [vehicleArray, setvehicleArray] = useState([])
-  const Postcheckbox = ["Tempo", "Truck", "Pickup", "Tractor", "Tow-truck", "Fire engine"];
+  const Postcheckbox = [
+    "Tempo",
+    "Truck",
+    "Pickup",
+    "Tractor",
+    "Tow-truck",
+    "Fire engine",
+  ];
   const [PostJob, setPostJob] = useState({
-    From: "",
-    To: "",
-    Date: "",
-    Time: "",
-    Type: "",
-    Budget: "",
-    Weight: "",
-    Note: "",
-    vehicles: vehicleArray
+    from: "",
+    to: "",
+    date: "",
+    time: "",
+    type: "",
+    budget: "",
+    weight: "",
+    note: "",
+    vehicles: [],
   });
+
+  const handleSubmit = () => {
+    setPostJob({
+      from: "",
+      to: "",
+      date: "",
+      time: "",
+      type: "",
+      budget: "",
+      weight: "",
+      note: "",
+      vehicles: [],
+    });
+    toaster.success("Your Job is successfully posted!", {
+      description: "Transporters will bid on your post soon...",
+    });
+  };
+
   return (
     <div className="postjob">
-      <div >
+      <div>
         <img className="postjob-image" src={job} alt="" />
       </div>
       <div className="postjob-form-container">
@@ -34,7 +59,7 @@ const PostJob = () => {
             placeholder="Start point"
             type="text"
             inputStyle={true}
-            name="StartPoint"
+            name="from"
             value={PostJob.from}
             state={PostJob}
             setState={setPostJob}
@@ -44,7 +69,7 @@ const PostJob = () => {
             placeholder="End point"
             type="text"
             inputStyle={true}
-            name="EndPoint"
+            name="to"
             value={PostJob.to}
             state={PostJob}
             setState={setPostJob}
@@ -56,8 +81,8 @@ const PostJob = () => {
                 placeholder="DD/MM/YYYY"
                 type="Date"
                 inputStyle={true}
-                name="Date"
-                value={PostJob.Date}
+                name="date"
+                value={PostJob.date}
                 state={PostJob}
                 setState={setPostJob}
               />
@@ -68,8 +93,8 @@ const PostJob = () => {
                 placeholder="HH:MM"
                 type="time"
                 inputStyle={true}
-                name="Time"
-                value={PostJob.messgae}
+                name="time"
+                value={PostJob.time}
                 state={PostJob}
                 setState={setPostJob}
               />
@@ -80,8 +105,8 @@ const PostJob = () => {
             placeholder="Ex: Furniture"
             type="text"
             inputStyle={true}
-            name="Type"
-            value={PostJob.Type}
+            name="type"
+            value={PostJob.type}
             state={PostJob}
             setState={setPostJob}
           />
@@ -91,8 +116,8 @@ const PostJob = () => {
             placeholder="Rs. 20,000/-"
             type="Number"
             inputStyle={true}
-            name="Budget"
-            value={PostJob.Budget}
+            name="budget"
+            value={PostJob.budget}
             state={PostJob}
             setState={setPostJob}
           />
@@ -102,37 +127,37 @@ const PostJob = () => {
             placeholder="450 kgs."
             type="text"
             inputStyle={true}
-            name="Weight"
-            value={PostJob.Weight}
+            name="weight"
+            value={PostJob.weight}
             state={PostJob}
             setState={setPostJob}
           />
           <div className="post-group">
-				<label className="post-label">Select Vehicles</label>
-				<div className="post-line"></div>
-			</div>
-
-          <div  className="postjobcheckbox">
-              {
-                  Postcheckbox.map ((label, index) => {
-                      return(
-                          <div className="checkbox-map"> 
-                        <CheckBox label={label} key = {index}
-                        arrayState={vehicleArray} setArrayState={setvehicleArray}/>
-                        </div>
-                      )   
-                  }
-                  )
-              }
+            <label className="post-label">Select Vehicles</label>
+            <div className="post-line"></div>
           </div>
-              
+
+          <div className="postjobcheckbox">
+            {Postcheckbox.map((label, index) => {
+              return (
+                <div className="checkbox-map" key={index}>
+                  <CheckBox
+                    label={label}
+                    arrayState={PostJob}
+                    setArrayState={setPostJob}
+                  />
+                </div>
+              );
+            })}
+          </div>
+
           <Input
             label="Note"
             placeholder="Note for the transporter..."
             type="text"
             inputStyle={true}
-            name="Note"
-            value={PostJob.Note}
+            name="note"
+            value={PostJob.note}
             state={PostJob}
             setState={setPostJob}
           />
@@ -140,7 +165,7 @@ const PostJob = () => {
             type="submit"
             ButtonSize="btn-large"
             ButtonStyle="btn-primary"
-            onClick={undefined}
+            onClick={handleSubmit}
           >
             <span> &#8594;</span>
             Book a ride

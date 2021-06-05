@@ -1,56 +1,52 @@
 import React, { useState } from "react";
 import "./CheckBox.scss";
 
-const CheckBox = ({
-	label,
-	handleChnage,
-	arrayState,
-	setArrayState,
-	category,
-}) => {
-	const [checked, setChecked] = useState(false);
-	const valueset = () => {
-		if (checked) {
-			setArrayState(
-				...arrayState,
-				label
-			)
-		} else {
-			return "";
-		}
-	};
+const CheckBox = ({ label, setArrayState, category }) => {
+  const [checked, setChecked] = useState(true);
 
-	console.log(checked);
+  const handleChange = (e) => {
+    setChecked(!checked);
+    if (checked) {
+      setArrayState((prevState) => ({
+        ...prevState,
+        vehicles: [...prevState.vehicles, label],
+      }));
+    } else {
+      setArrayState((prevState) => ({
+        ...prevState,
+        vehicles: prevState.vehicles.filter(
+          (element) => element !== e.target.name
+        ),
+      }));
+    }
+  };
 
-	return (
-		<>
-			<div
-				className={
-					category === "user"
-						? checked
-							? "active-check"
-							: "inactive-check"
-						: checked
-						? "trans-active-check"
-						: "trans-inactive-check"
-				}
-			>
-				<label className="checkbox-label">
-					<input
-						name={label}
-						type="checkbox"
-						defaultChecked={checked}
-						value={valueset()}
-						onChange={(e) => setChecked(!checked)}
-						handleChnage={handleChnage}
-						arrayState={arrayState}
-						setArrayState={setArrayState}
-					/>
-					{label}
-				</label>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div
+        className={
+          category === "user"
+            ? checked
+              ? "active-check"
+              : "inactive-check"
+            : checked
+            ? "trans-active-check"
+            : "trans-inactive-check"
+        }
+      >
+        <label className="checkbox-label">
+          <input
+            name={label}
+            type="checkbox"
+            // defaultChecked={checked}
+            value={label}
+            onChange={(e) => handleChange(e)}
+          />
+          {label}
+        </label>
+      </div>
+    </>
+  );
 };
 
 export default CheckBox;
