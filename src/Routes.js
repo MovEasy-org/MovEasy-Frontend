@@ -9,7 +9,7 @@ import LandingPage from "./modules/LandingPage/LandingPage";
 
 const Routes = () => {
 	// fetch user type from local host
-	let user = "CUSTOMER";
+	let user = "CUSTOMERa";
 
 	return (
 		<Switch>
