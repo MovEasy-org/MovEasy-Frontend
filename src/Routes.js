@@ -4,11 +4,12 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Login from "./modules/auth/Login/Login";
 import Signup from "./modules/auth/Signup/Signup";
+import PostAJob from "./modules/Customer";
 import LandingPage from "./modules/LandingPage/LandingPage";
 
 const Routes = () => {
 	// fetch user type from local host
-	let user = "CUSTOMER1";
+	let user = "CUSTOMER";
 
 	return (
 		<Switch>
@@ -21,7 +22,7 @@ const Routes = () => {
 			) : user === "CUSTOMER" ? (
 				<>
 					<Header isCustomer />
-					<Route />
+					<Route exact path="/" component={PostAJob} />
 					<Footer isLoggedin />
 				</>
 			) : (
