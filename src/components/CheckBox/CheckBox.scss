@@ -33,6 +33,7 @@ input[type="checkbox"] {
 	padding: 0.2rem 1rem;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px $shadow-color;
+	border: 2px solid $background-color;
 }
 
 .trans-inactive-check {
