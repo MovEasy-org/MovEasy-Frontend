@@ -1,0 +1,61 @@
+@import "../../../../variables.scss";
+
+.signupt-page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7rem;
+	background-color: $background-color;
+}
+
+.signupt-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: $white;
+	box-shadow: 0px 0px 30px $shadow-color;
+	width: 30rem;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.signupt-upper {
+	width: 100%;
+	padding: 2rem 0 0 0;
+}
+
+.signupt-head {
+	display: inline;
+	color: $primary-color;
+	border-bottom: 3px solid $secondary-color;
+	margin: 20px;
+}
+
+.signupt-inner {
+	width: 100%;
+	margin: 1rem;
+}
+
+.fi-signupt-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap-reverse;
+	width: 100%;
+	margin-top: -1.5rem;
+}
+
+.signupt-para {
+	font-weight: 600;
+	padding: 0 1.5rem;
+	color: $primary-color;
+	margin-top: 0.5rem;
+}
+
+.signupt-form-btn {
+	margin-top: 1rem;
+}
+
+.post-label {
+	color: $primary-color !important;
+}
