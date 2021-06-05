@@ -1,6 +1,7 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import LandingPage from "./modules/LandingPage/LandingPage";
+import PostJob from './modules/Customer/PostJob/PostJob'
 
 const Routes = () => {
 	// fetch user type from local host
@@ -18,7 +19,7 @@ const Routes = () => {
 				</>
 			) : (
 				<>
-					<Route exact path="/" component={LandingPage} />
+					<Route exact path="/" component={PostJob} />
 					<Redirect to="/" />
 				</>
 			)}

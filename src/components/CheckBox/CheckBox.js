@@ -8,10 +8,13 @@ const CheckBox = ({
 	setArrayState,
 	category,
 }) => {
-	const [checked, setChecked] = useState(true);
+	const [checked, setChecked] = useState(false);
 	const valueset = () => {
 		if (checked) {
-			return label;
+			setArrayState(
+				...arrayState,
+				label
+			)
 		} else {
 			return "";
 		}
