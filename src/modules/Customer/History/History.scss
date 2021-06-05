@@ -1,0 +1,19 @@
+@import "./../../../variables.scss";
+
+.history-container{
+    width: 100%;
+    margin-top: 5.5rem;
+}
+
+.history-map-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.history-head{
+    color: $white;
+    border-bottom: 4px solid $secondary-color;
+    display: inline;
+    margin: 9.5rem;
+}
