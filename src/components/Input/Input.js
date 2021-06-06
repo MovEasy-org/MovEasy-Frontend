@@ -11,6 +11,7 @@ const Input = ({
 	name,
 	state,
 	setState,
+	newref,
 }) => {
 	// Handle Change Function
 	const handleChange = (e) => {
@@ -40,6 +41,7 @@ const Input = ({
 
 			{isTextarea ? (
 				<textarea
+					ref={newref}
 					rows="5"
 					name={name}
 					value={value}
@@ -49,6 +51,7 @@ const Input = ({
 				/>
 			) : (
 				<input
+					ref={newref}
 					name={name}
 					type={type}
 					value={value}

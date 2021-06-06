@@ -4,6 +4,11 @@ import { Avatar, Popover, Menu, Position } from "evergreen-ui";
 import Button1 from "../Button/Button";
 import "./Header.scss";
 
+const LogOut = () => {
+	localStorage.clear();
+	window.location.reload();
+};
+
 const Header = ({ isTransporter, isCustomer }) => {
 	if (isTransporter) return <NavbarTransporter />;
 	else if (isCustomer) return <NavbarCustomer />;
@@ -89,7 +94,9 @@ const NavbarCustomer = () => (
 							</Menu.Group>
 							<Menu.Divider />
 							<Menu.Group>
-								<Menu.Item intent="danger">Log out</Menu.Item>
+								<Menu.Item intent="danger" onClick={LogOut}>
+									Log out
+								</Menu.Item>
 							</Menu.Group>
 						</Menu>
 					}

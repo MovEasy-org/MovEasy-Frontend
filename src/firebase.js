@@ -10,8 +10,13 @@ const firebaseConfig = {
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
+// var fireDb = firebase.initializeApp(firebaseConfig);
+
+const databasefb = firebaseApp.database().ref();
 const db = firebase.firestore();
 const auth = firebase.auth();
+
+export { databasefb };
 
 export { auth };
 export default db;

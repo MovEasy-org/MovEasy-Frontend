@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { useHistory } from "react-router-dom";
+import { auth } from "../../../firebase";
 import { Link } from "react-router-dom";
 import "./Login.scss";
 import { ReactComponent as Userlogin } from "./assets/Userlogin.svg";
@@ -11,6 +13,28 @@ const Login = () => {
 		email: "",
 		password: "",
 	});
+
+	const emailRef = useRef(null);
+	const passwordRef = useRef(null);
+	let history = useHistory();
+
+	const signin = (e) => {
+		e.preventDefault();
+
+		auth
+			.signInWithEmailAndPassword(
+				emailRef.current.value,
+				passwordRef.current.value
+			)
+			.then((authUser) => {
+				localStorage.setItem("uid", authUser.user.uid);
+				console.log(authUser.user.uid);
+				history.push("/");
+			})
+			.catch((error) => {
+				alert(error.message);
+			});
+	};
 
 	return (
 		<div className="login-page-container">
@@ -29,6 +53,7 @@ const Login = () => {
 						<div className="login-form-container">
 							<FormLayout formColor={true} state={user}>
 								<Input
+									newref={emailRef}
 									label="Email"
 									placeholder="Your email"
 									inputStyle={false}
@@ -39,6 +64,7 @@ const Login = () => {
 									setState={setUser}
 								/>
 								<Input
+									newref={passwordRef}
 									label="Password"
 									placeholder="Your password"
 									inputStyle={false}
@@ -58,6 +84,7 @@ const Login = () => {
 										type="submit"
 										ButtonSize="btn-large"
 										ButtonStyle="btn-link"
+										onClick={signin}
 									>
 										Login
 									</Button>

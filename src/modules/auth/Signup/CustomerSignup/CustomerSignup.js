@@ -1,16 +1,41 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./CustomerSignup.scss";
 import { ReactComponent as UserSignup } from "./../assets/CustomerSignup.svg";
 import FormLayout from "../../../../components/FormLayout/FormLayout";
 import Input from "../../../../components/Input/Input";
 import Button from "../../../../components/Button/Button";
 
+import { databasefb } from "./../../../../firebase";
+
 const CustomerSignup = () => {
+	let history = useHistory();
+	// ********* push to DB *********
+	const addOrEdit = (obj) => {
+		databasefb
+			.child("customers")
+			.push(obj, (err) => {
+				if (err) console.log(err);
+			})
+			.then((docRef) => {
+				console.log("User ID: ", docRef.key);
+				localStorage.setItem("uid", docRef.key);
+				localStorage.setItem("userType", "CUSTOMER");
+				history.push("/");
+				window.location.reload();
+			});
+	};
+
+	const createUser = (e) => {
+		e.preventDefault();
+		addOrEdit(user);
+	};
+
 	const [user, setUser] = useState({
 		name: "",
-		// email: "",
 		phone: "",
-		// password: "",
+		isCustomer: true,
+		uid: localStorage.getItem("uid"),
 	});
 
 	return (
@@ -38,15 +63,6 @@ const CustomerSignup = () => {
 									state={user}
 									setState={setUser}
 								/>
-								{/* <Input
-									label="Email"
-									placeholder="Your email"
-									type="email"
-									name="email"
-									value={user.email}
-									state={user}
-									setState={setUser}
-								/> */}
 								<Input
 									label="Phone"
 									placeholder="Your phone"
@@ -56,20 +72,12 @@ const CustomerSignup = () => {
 									state={user}
 									setState={setUser}
 								/>
-								{/* <Input
-									label="Password"
-									placeholder="Your password"
-									type="password"
-									name="password"
-									value={user.password}
-									state={user}
-									setState={setUser}
-								/> */}
 								<div className="signup-form-btn">
 									<Button
 										type="submit"
 										ButtonSize="btn-large"
 										ButtonStyle="btn-link"
+										onClick={(e) => createUser(e)}
 									>
 										Sign up
 									</Button>
