@@ -9,17 +9,18 @@ import Signup from "./modules/auth/Signup/Signup";
 import PostAJob from "./modules/Customer";
 import LandingPage from "./modules/LandingPage/LandingPage";
 import History from "./modules/Customer/History/History";
+import Transporter from "./modules/Transporter";
 
 const Routes = () => {
 	// fetch user type from local host
-	let user = "CUSTOMER";
+	let user = "TRANSPORTER";
 
 	return (
 		<Switch>
 			{user === "TRANSPORTER" ? (
 				<>
 					<Header isTransporter />
-					<Route />
+					<Route exact path="/" component={Transporter} />
 					<Footer isLoggedin />
 				</>
 			) : user === "CUSTOMER" ? (
