@@ -1,5 +1,5 @@
 import React from "react";
-import PostStatus from "../PostStatus/PostStatus";
+import PostStatus from "../../../../../components/PostStatus/PostStatus";
 import "./HistoryCard.scss";
 const HistoryCard = ({ status, from, to, date, time }) => {
 	return (
