@@ -128,7 +128,7 @@ const PostJob = () => {
 						setState={setPostJob}
 					/>
 					<div className="post-group">
-						<label className="post-label">Select Vehicles</label>
+						<label className="post-vehicle-label">Select Vehicles</label>
 						<div className="post-line"></div>
 					</div>
 
@@ -137,6 +137,7 @@ const PostJob = () => {
 							return (
 								<div className="checkbox-map" key={index}>
 									<CheckBox
+										category="user"
 										label={label}
 										arrayState={PostJob}
 										setArrayState={setPostJob}

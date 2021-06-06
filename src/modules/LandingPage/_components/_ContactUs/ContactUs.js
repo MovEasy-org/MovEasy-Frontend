@@ -14,6 +14,10 @@ const ContactUs = () => {
 		message: "",
 	});
 
+	// const handleClick = (e) => (
+
+	// );
+
 	return (
 		<>
 			<div className="contact-container" id="contact-us">

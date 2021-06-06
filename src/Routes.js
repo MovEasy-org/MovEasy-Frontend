@@ -11,13 +11,14 @@ import LandingPage from "./modules/LandingPage/LandingPage";
 import History from "./modules/Customer/History/History";
 import Transporter from "./modules/Transporter";
 import Notification from "./components/Notification/Notification";
+import BidCard from "./modules/Transporter/_components/BidCard/BidCard";
 
 const Routes = () => {
 	// fetch user type from local host
 
-	localStorage.setItem("userType", "normal");
+	localStorage.setItem("userType", "L");
 	// localStorage.setItem("userType", "TRANSPORTER");
-	// localStorage.setItem("userType", "CUSTOMER");
+	localStorage.setItem("userType", "CUSTOMER");
 
 	let user = localStorage.getItem("userType");
 
@@ -29,14 +30,15 @@ const Routes = () => {
 					<Route exact path="/" component={Transporter} />
 					<Route exact path="/history" component={History} />
 					<Route exact path="/notifications" component={Notification} />
+					<Route exact path="/place-bid" component={BidCard} />
 					<Footer isLoggedin />
 				</>
 			) : user === "CUSTOMER" ? (
 				<>
 					<Header isCustomer />
 					<Route exact path="/" component={PostAJob} />
-					<Route exact path="/history" component={History} />
 					<Route exact path="/notifications" component={Notification} />
+					<Route exact path="/history" component={History} />
 					<Footer isLoggedin />
 				</>
 			) : (

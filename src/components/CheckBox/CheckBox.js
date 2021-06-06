@@ -27,8 +27,8 @@ const CheckBox = ({ label, setArrayState, category }) => {
 				className={
 					category === "user"
 						? checked
-							? "active-check"
-							: "inactive-check"
+							? "inactive-check"
+							: "active-check"
 						: checked
 						? "trans-inactive-check"
 						: "trans-active-check"

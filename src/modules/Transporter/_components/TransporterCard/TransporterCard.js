@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./TransporterCard.scss";
 import Button from "./../../../../components/Button/Button";
 import { ReactComponent as Swap } from "./assets/swapIcon.svg";
@@ -15,15 +16,15 @@ const TransporterCard = ({
 	time,
 }) => {
 	return (
-		<div className="history-card-container">
+		<div className="trans-card-container">
 			<h4 className="trans-card-title">{goodsType}</h4>
 
 			<table className="left-self">
-				<tr className="history-card-content">
+				<tr className="trans-card-content">
 					<th valign="top" className="para-label">
 						From:
 					</th>
-					<td className="history-content">{from}</td>
+					<td className="trans-content">{from}</td>
 				</tr>
 			</table>
 
@@ -32,11 +33,11 @@ const TransporterCard = ({
 			</div>
 
 			<table className="left-self">
-				<tr className="history-card-content">
+				<tr className="trans-card-content">
 					<th valign="top" className="para-label">
 						To:
 					</th>
-					<td className="history-content">{to}</td>
+					<td className="trans-content">{to}</td>
 				</tr>
 			</table>
 
@@ -58,13 +59,15 @@ const TransporterCard = ({
 					<p className="time">{time}</p>
 				</div>
 				<div className="placebid">
-					<Button
-						type="any"
-						ButtonStyle="btn-primary-invert"
-						ButtonSize="btn-medium"
-					>
-						Place Bid
-					</Button>
+					<Link to="/place-bid">
+						<Button
+							type="any"
+							ButtonStyle="btn-primary-invert"
+							ButtonSize="btn-medium"
+						>
+							Place Bid
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</div>
