@@ -1,0 +1,62 @@
+@import "./../../../../variables.scss";
+
+.noti-bar-container {
+  display: flex;
+  background-color: $white;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px $shadow-color;
+  margin: 1.5rem 0;
+  
+}
+
+.noti-left {
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  font-weight: 600;
+}
+.noti-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.noti-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.noti-para {
+  margin: 0.2rem 1rem;
+  font-weight: 700;
+}
+.noti-para-1 {
+  display: inline;
+  border-bottom: 3px solid $secondary-color;
+}
+
+.noti-bid {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: $secondary-color;
+}
+.noti-light {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .noti-bar-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .noti-left {
+    flex-direction: column;
+  }
+  .noti-btn{
+    margin-top: 1rem;
+  }
+}
