@@ -1,0 +1,70 @@
+@import "./../../../../variables.scss";
+
+.trans-card-title {
+	width: max-content;
+	display: inline;
+	color: $primary-color;
+	border-bottom: 3px solid $secondary-color;
+	margin-bottom: 1rem;
+}
+
+.history-card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $white;
+	width: 22rem;
+	border-radius: 20px;
+	padding: 1.5rem;
+	// margin: 2rem;
+}
+
+.para-label {
+	font-weight: 700;
+	width: 4.5rem;
+	color: $background-color;
+	text-align: left;
+}
+
+.history-card-content {
+	margin: 0.25rem 0;
+}
+
+.history-content {
+	color: $primary-color;
+}
+
+.icon-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.4rem 0;
+}
+
+.vehicle-budget {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem 0;
+}
+
+.vehicle {
+	display: flex;
+	align-items: center;
+	h5 {
+		margin-right: 0.5rem;
+	}
+}
+
+.user-placebid {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+}
+
+.left-self {
+	align-self: flex-start;
+}
