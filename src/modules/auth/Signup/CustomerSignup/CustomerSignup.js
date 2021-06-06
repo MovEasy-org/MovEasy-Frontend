@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import "./CustomerSignup.scss";
 import { ReactComponent as UserSignup } from "./../assets/CustomerSignup.svg";
 import FormLayout from "../../../../components/FormLayout/FormLayout";
 import Input from "../../../../components/Input/Input";
 import Button from "../../../../components/Button/Button";
+import { useHistory } from "react-router-dom";
 import { databasefb } from "./../../../../firebase";
 
 const CustomerSignup = () => {
