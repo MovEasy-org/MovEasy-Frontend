@@ -5,7 +5,6 @@ import { ReactComponent as UserSignup } from "./../assets/CustomerSignup.svg";
 import FormLayout from "../../../../components/FormLayout/FormLayout";
 import Input from "../../../../components/Input/Input";
 import Button from "../../../../components/Button/Button";
-
 import { databasefb } from "./../../../../firebase";
 
 const CustomerSignup = () => {
@@ -21,6 +20,7 @@ const CustomerSignup = () => {
 				console.log("User ID: ", docRef.key);
 				localStorage.setItem("uid", docRef.key);
 				localStorage.setItem("userType", "CUSTOMER");
+				localStorage.setItem("name", user.name);
 				history.push("/");
 				window.location.reload();
 			});
@@ -34,8 +34,9 @@ const CustomerSignup = () => {
 	const [user, setUser] = useState({
 		name: "",
 		phone: "",
-		isCustomer: true,
+		usercat: "CUSTOMER",
 		uid: localStorage.getItem("uid"),
+		email: localStorage.getItem("email"),
 	});
 
 	return (

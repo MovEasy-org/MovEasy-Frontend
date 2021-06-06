@@ -27,6 +27,7 @@ const Login = () => {
 			)
 			.then((authUser) => {
 				localStorage.setItem("uid", authUser.user.uid);
+				localStorage.setItem("email", authUser.user.email);
 				console.log(authUser.user.uid);
 				history.push("/user-check");
 			})

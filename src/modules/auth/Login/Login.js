@@ -7,8 +7,11 @@ import { ReactComponent as Userlogin } from "./assets/Userlogin.svg";
 import FormLayout from "../../../components/FormLayout/FormLayout";
 import Input from "../../../components/Input/Input";
 import Button from "../../../components/Button/Button";
+import { databasefb } from "./../../../firebase";
 
 const Login = () => {
+	let history = useHistory();
+
 	const [user, setUser] = useState({
 		email: "",
 		password: "",
@@ -16,7 +19,6 @@ const Login = () => {
 
 	const emailRef = useRef(null);
 	const passwordRef = useRef(null);
-	let history = useHistory();
 
 	const signin = (e) => {
 		e.preventDefault();
@@ -28,12 +30,33 @@ const Login = () => {
 			)
 			.then((authUser) => {
 				localStorage.setItem("uid", authUser.user.uid);
-				console.log(authUser.user.uid);
+				localStorage.setItem("email", authUser.user.email);
+				// console.log(authUser);
 				history.push("/");
 			})
 			.catch((error) => {
 				alert(error.message);
 			});
+
+		databasefb.child("customers").on("value", (snapshot) => {
+			let studentlist = [];
+			snapshot.forEach((snap) => {
+				studentlist.push(snap.val());
+			});
+
+			studentlist.forEach((student) => {
+				if (student.uid === localStorage.getItem("uid")) {
+					console.log("");
+				} else {
+					localStorage.setItem("email", student.email);
+					localStorage.setItem("name", student.name);
+					localStorage.setItem("userType", student.usercat);
+					setTimeout(() => {
+						window.location.reload();
+					}, 2000);
+				}
+			});
+		});
 	};
 
 	return (

@@ -87,10 +87,10 @@ const NavbarCustomer = () => (
 							<Menu.Group>
 								<Menu.Item>
 									<div className="align-center-name">
-										<b>Manvi Jain</b>
+										<b>{localStorage.getItem("name")}</b>
 									</div>
 								</Menu.Item>
-								<Menu.Item>manvijain0888@gmail.com</Menu.Item>
+								<Menu.Item>{localStorage.getItem("email")}</Menu.Item>
 							</Menu.Group>
 							<Menu.Divider />
 							<Menu.Group>
@@ -101,7 +101,7 @@ const NavbarCustomer = () => (
 						</Menu>
 					}
 				>
-					<Avatar name="Manvi Jain" size={50} />
+					<Avatar name={localStorage.getItem("name")} size={50} />
 				</Popover>
 			</Link>
 		</div>
