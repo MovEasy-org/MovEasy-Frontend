@@ -8,7 +8,7 @@
 	margin-bottom: 1rem;
 }
 
-.history-card-container {
+.trans-card-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -16,7 +16,6 @@
 	width: 22rem;
 	border-radius: 20px;
 	padding: 1.5rem;
-	// margin: 2rem;
 }
 
 .para-label {
@@ -26,11 +25,11 @@
 	text-align: left;
 }
 
-.history-card-content {
+.trans-card-content {
 	margin: 0.25rem 0;
 }
 
-.history-content {
+.trans-content {
 	color: $primary-color;
 }
 

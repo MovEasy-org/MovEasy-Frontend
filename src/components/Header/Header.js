@@ -80,8 +80,12 @@ const NavbarCustomer = () => (
 					content={
 						<Menu className="pop">
 							<Menu.Group>
-								<Menu.Item>Share...</Menu.Item>
-								<Menu.Item>Move...</Menu.Item>
+								<Menu.Item>
+									<div className="align-center-name">
+										<b>Manvi Jain</b>
+									</div>
+								</Menu.Item>
+								<Menu.Item>manvijain0888@gmail.com</Menu.Item>
 							</Menu.Group>
 							<Menu.Divider />
 							<Menu.Group>
