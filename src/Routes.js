@@ -10,10 +10,16 @@ import PostAJob from "./modules/Customer";
 import LandingPage from "./modules/LandingPage/LandingPage";
 import History from "./modules/Customer/History/History";
 import Transporter from "./modules/Transporter";
+import Notification from "./components/Notification/Notification";
 
 const Routes = () => {
 	// fetch user type from local host
-	let user = "TRANSPORTER";
+
+	localStorage.setItem("userType", "normal");
+	// localStorage.setItem("userType", "TRANSPORTER");
+	// localStorage.setItem("userType", "CUSTOMER");
+
+	let user = localStorage.getItem("userType");
 
 	return (
 		<Switch>
@@ -21,6 +27,8 @@ const Routes = () => {
 				<>
 					<Header isTransporter />
 					<Route exact path="/" component={Transporter} />
+					<Route exact path="/history" component={History} />
+					<Route exact path="/notifications" component={Notification} />
 					<Footer isLoggedin />
 				</>
 			) : user === "CUSTOMER" ? (
@@ -28,6 +36,7 @@ const Routes = () => {
 					<Header isCustomer />
 					<Route exact path="/" component={PostAJob} />
 					<Route exact path="/history" component={History} />
+					<Route exact path="/notifications" component={Notification} />
 					<Footer isLoggedin />
 				</>
 			) : (
@@ -42,8 +51,8 @@ const Routes = () => {
 						path="/signup/transporter"
 						component={TransporterSignup}
 					/>
-					<Redirect to="/" />
 					<Footer />
+					<Redirect to="/" />
 				</>
 			)}
 		</Switch>
