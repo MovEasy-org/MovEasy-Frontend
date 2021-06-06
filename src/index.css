@@ -12,6 +12,11 @@ body {
 	background-color: #121a35;
 }
 
+::selection {
+	color: cyan;
+	background: #121a35;
+  }
+
 ul {
 	list-style: none;
 }
