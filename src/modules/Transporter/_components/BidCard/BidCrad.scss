@@ -1,0 +1,92 @@
+@import "../../../../variables.scss";
+
+.bid-card-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bid-container {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  width: 40rem;
+  margin: 8rem auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding-bottom: 0;
+}
+.bid-upper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.bid-card-head {
+  color: $primary-color;
+}
+.bid-table {
+  display: flex;
+  width: 100%;
+
+  color: $primary-color;
+}
+.bid-table-section {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  table {
+    width: 100%;
+  }
+  tr {
+    height: 2.5rem;
+  }
+}
+
+.bid-th {
+  text-align: left;
+}
+.bid-inputs {
+  width: 100%;
+  display: flex;
+  margin: 0rem 0;
+}
+.bid-inputs-inner {
+  width: 50%;
+}
+.bid-inputs-outer {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-bid {
+  display: flex;
+  flex-direction: column;
+}
+.bid-btn {
+  margin: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  .bid-container {
+    width: 90%;
+  }
+  .bid-table {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bid-table-section {
+    align-items: center;
+  }
+  .bid-inputs-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+}
