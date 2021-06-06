@@ -1,0 +1,72 @@
+@import "../../../../variables.scss";
+
+.login-page-container {
+	margin-top: 2rem;
+}
+
+.login-inner {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1rem 0 2rem 0;
+}
+
+.customer,
+.transporter {
+	width: 17rem;
+	border-radius: 0.8rem;
+	padding: 0 1.5rem 1.5rem 1.5rem;
+	transition: box-shadow 0.25s ease;
+	&:hover {
+		box-shadow: 2px 2px 20px #4ad0ee34;
+	}
+}
+
+.info {
+	margin-top: -2rem;
+	h4 {
+		color: $primary-color;
+		span {
+			color: $secondary-color;
+		}
+	}
+	p {
+		line-height: 1.5;
+		color: $primary-color;
+	}
+}
+// @import "./../../../variables.scss";
+
+.login-page-container {
+	margin-top: 2rem;
+}
+
+.login-inner {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1rem 0 2rem 0;
+}
+
+.customer,
+.transporter {
+	width: 17rem;
+	border-radius: 0.8rem;
+	padding: 0 1.5rem 1.5rem 1.5rem;
+	transition: box-shadow 0.25s ease;
+	&:hover {
+		box-shadow: 2px 2px 20px #4ad0ee34;
+	}
+}
+
+.info {
+	margin-top: -2rem;
+	h4 {
+		color: $primary-color;
+		span {
+			color: $secondary-color;
+		}
+	}
+	p {
+		line-height: 1.5;
+		color: $primary-color;
+	}
+}

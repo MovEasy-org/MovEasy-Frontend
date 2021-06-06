@@ -8,9 +8,9 @@ import CheckBox from "./../../../../components/CheckBox/CheckBox";
 const TransporterSignup = () => {
 	const [user, setUser] = useState({
 		name: "",
-		email: "",
+		// email: "",
 		phone: "",
-		password: "",
+		// password: "",
 		vehicles: [],
 		vehicleNo: "",
 	});
@@ -27,7 +27,7 @@ const TransporterSignup = () => {
 		<div className="signupt-page-container">
 			<div className="signupt-container">
 				<div className="signupt-upper">
-					<h2 className="signupt-head">Create Profile</h2>
+					<h2 className="signupt-head">Add Details</h2>
 					<p className="signupt-para">
 						Moveasy Is A New Professional Network For Flexible Work.
 					</p>
@@ -44,7 +44,7 @@ const TransporterSignup = () => {
 								state={user}
 								setState={setUser}
 							/>
-							<Input
+							{/* <Input
 								label="Email"
 								placeholder="Your email"
 								type="email"
@@ -52,7 +52,7 @@ const TransporterSignup = () => {
 								value={user.email}
 								state={user}
 								setState={setUser}
-							/>
+							/> */}
 							<Input
 								label="Phone"
 								placeholder="Your phone"
@@ -62,7 +62,7 @@ const TransporterSignup = () => {
 								state={user}
 								setState={setUser}
 							/>
-							<Input
+							{/* <Input
 								label="Password"
 								placeholder="Your password"
 								type="password"
@@ -70,7 +70,7 @@ const TransporterSignup = () => {
 								value={user.password}
 								state={user}
 								setState={setUser}
-							/>
+							/> */}
 
 							<div className="post-group">
 								<label className="post-label">Select Vehicles</label>

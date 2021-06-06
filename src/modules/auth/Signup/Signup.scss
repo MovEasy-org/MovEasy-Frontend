@@ -1,36 +1,69 @@
-@import "./../../../variables.scss";
+@import "../../../variables.scss";
 
 .login-page-container {
-	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100;
+	height: 100vh;
+	background-color: $background-color;
+}
+
+.login-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: $white;
+	box-shadow: 0px 0px 30px $shadow-color;
+	width: 50rem;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-upper {
+	width: 100%;
+	padding: 2rem 0 0 0;
 }
 
 .login-inner {
+	width: 100%;
+	margin: 1rem;
+}
+
+.fi-container {
 	display: flex;
-	justify-content: space-evenly;
-	padding: 1rem 0 2rem 0;
+	width: 100%;
+	flex-wrap: wrap-reverse;
 }
 
-.customer,
-.transporter {
-	width: 17rem;
-	border-radius: 0.8rem;
-	padding: 0 1.5rem 1.5rem 1.5rem;
-	transition: box-shadow 0.25s ease;
-	&:hover {
-		box-shadow: 2px 2px 20px #4ad0ee34;
-	}
+.login-head {
+	display: inline;
+	color: $primary-color;
+	border-bottom: 3px solid $secondary-color;
+	margin: 20px;
 }
 
-.info {
-	margin-top: -2rem;
-	h4 {
-		color: $primary-color;
-		span {
-			color: $secondary-color;
-		}
-	}
-	p {
-		line-height: 1.5;
-		color: $primary-color;
-	}
+.login-para {
+	font-weight: 600;
+	color: $primary-color;
+	margin-top: 0.5rem;
+}
+
+.login-image-container {
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-form-container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-form-btn {
+	margin-top: 1rem;
 }

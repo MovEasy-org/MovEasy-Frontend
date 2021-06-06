@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Login from "./modules/auth/Login/Login";
@@ -12,13 +12,14 @@ import History from "./modules/Customer/History/History";
 import Transporter from "./modules/Transporter";
 import Notification from "./components/Notification/Notification";
 import BidCard from "./modules/Transporter/_components/BidCard/BidCard";
+import userCheck from "./modules/auth/Signup/userCheck/userCheck";
 
 const Routes = () => {
 	// fetch user type from local host
 
 	localStorage.setItem("userType", "L");
 	// localStorage.setItem("userType", "TRANSPORTER");
-	localStorage.setItem("userType", "CUSTOMER");
+	// localStorage.setItem("userType", "CUSTOMER");
 
 	let user = localStorage.getItem("userType");
 
@@ -47,6 +48,7 @@ const Routes = () => {
 					<Route exact path="/" component={LandingPage} />
 					<Route exact path="/login" component={Login} />
 					<Route exact path="/signup" component={Signup} />
+					<Route exact path="/user-check" component={userCheck} />
 					<Route exact path="/signup/customer" component={CustomerSignup} />
 					<Route
 						exact
@@ -54,7 +56,7 @@ const Routes = () => {
 						component={TransporterSignup}
 					/>
 					<Footer />
-					<Redirect to="/" />
+					{/* <Redirect to="/" /> */}
 				</>
 			)}
 		</Switch>

@@ -8,16 +8,16 @@ import Button from "../../../../components/Button/Button";
 const CustomerSignup = () => {
 	const [user, setUser] = useState({
 		name: "",
-		email: "",
+		// email: "",
 		phone: "",
-		password: "",
+		// password: "",
 	});
 
 	return (
 		<div className="signup-page-container">
 			<div className="signup-container">
 				<div className="signup-upper">
-					<h2 className="signup-head">Create Profile</h2>
+					<h2 className="signup-head">Add Details</h2>
 					<p className="signup-para">
 						Moveasy Is A New Professional Network For Flexible Work.
 					</p>
@@ -38,7 +38,7 @@ const CustomerSignup = () => {
 									state={user}
 									setState={setUser}
 								/>
-								<Input
+								{/* <Input
 									label="Email"
 									placeholder="Your email"
 									type="email"
@@ -46,7 +46,7 @@ const CustomerSignup = () => {
 									value={user.email}
 									state={user}
 									setState={setUser}
-								/>
+								/> */}
 								<Input
 									label="Phone"
 									placeholder="Your phone"
@@ -56,7 +56,7 @@ const CustomerSignup = () => {
 									state={user}
 									setState={setUser}
 								/>
-								<Input
+								{/* <Input
 									label="Password"
 									placeholder="Your password"
 									type="password"
@@ -64,7 +64,7 @@ const CustomerSignup = () => {
 									value={user.password}
 									state={user}
 									setState={setUser}
-								/>
+								/> */}
 								<div className="signup-form-btn">
 									<Button
 										type="submit"
