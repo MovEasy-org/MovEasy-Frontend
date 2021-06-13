@@ -1,37 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="471" height="793.872" viewBox="0 0 471 793.872">
-  <g id="Group_1198" data-name="Group 1198" transform="translate(-444 -195)">
-    <g id="Group_1193" data-name="Group 1193" transform="translate(-9542 4328)">
-      <path id="Path_796" data-name="Path 796" d="M-52-7.995S229.3,26.053,229.3,108.177-52,201.435-52,283.681s281.3,70.153,281.3,153.482S-52,536.037-52,629.766,229.3,769.29,229.3,769.29" transform="translate(10123.061 -4117.77)" fill="none" stroke="#4ad0ee" stroke-linecap="round" stroke-width="5" stroke-dasharray="10 15"/>
-      <path id="Path_798" data-name="Path 798" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(10065 -4133)" fill="#fff"/>
-      <path id="Path_797" data-name="Path 797" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(10343.007 -4028.591)" fill="#fff"/>
-      <path id="Path_799" data-name="Path 799" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(10061.709 -3849.413)" fill="#fff"/>
-      <path id="Path_800" data-name="Path 800" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(10343.007 -3702.288)" fill="#fff"/>
-      <path id="Path_802" data-name="Path 802" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(10061.709 -3501.603)" fill="#fff"/>
-      <path id="Path_803" data-name="Path 803" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(10343.007 -3357.83)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="484" height="1383.935" viewBox="0 0 484 1383.935">
+  <g id="Group_1535" data-name="Group 1535" transform="translate(-375 -227.064)">
+    <g id="Group_1193" data-name="Group 1193" transform="translate(451.709 227.064)">
+      <path id="Path_796" data-name="Path 796" d="M-52-7.995S229.3,51.9,229.3,196.368-52,360.42-52,505.1s281.3,123.409,281.3,270S-52,949.031-52,1113.912s281.3,245.442,281.3,245.442" transform="translate(61.352 15.23)" fill="none" stroke="#4ad0ee" stroke-linecap="round" stroke-width="5" stroke-dasharray="10 15"/>
+      <path id="Path_798" data-name="Path 798" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(3.291)" fill="#fff"/>
+      <path id="Path_797" data-name="Path 797" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(281.298 196.409)" fill="#fff"/>
+      <path id="Path_799" data-name="Path 799" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(0 499.455)" fill="#fff"/>
+      <path id="Path_800" data-name="Path 800" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(281.298 758.572)" fill="#fff"/>
+      <path id="Path_802" data-name="Path 802" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(0 1112.02)" fill="#fff"/>
+      <path id="Path_803" data-name="Path 803" d="M9.351,0A9.351,9.351,0,1,1,0,9.351,9.351,9.351,0,0,1,9.351,0Z" transform="translate(281.298 1365.234)" fill="#fff"/>
     </g>
-    <g id="Group_1194" data-name="Group 1194" transform="translate(148 -23)">
-      <text id="This_is_Content" data-name="This is Content" transform="translate(389 298)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-74.81" y="0">This is Content</tspan></text>
-      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod" data-name="Lorem ipsum dolor sit amet, 
-consetetur sadipscing elitr, 
-sed diam nonumy eirmod" transform="translate(314 336)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="25">consetetur sadipscing elitr, </tspan><tspan x="0" y="50">sed diam nonumy eirmod</tspan></text>
+    <g id="Group_1194" data-name="Group 1194" transform="translate(394 368.064)">
+      <text id="Correct_location" data-name="Correct location" transform="translate(82 21)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-82.2" y="0">Correct location</tspan></text>
+      <text id="Enroll_in_the_right_location._It_ll_be_convenient_for_the_transporter_to_reach_you_fast._" data-name="Enroll in the right location. It&apos;ll be convenient for the transporter to reach you fast.
+" transform="translate(0 42)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Enroll in the right location. </tspan><tspan x="0" y="42">It&apos;ll be convenient for the </tspan><tspan x="0" y="67">transporter to reach you </tspan><tspan x="0" y="92">fast.</tspan></text>
     </g>
-    <g id="Group_1195" data-name="Group 1195" transform="translate(363 153)">
-      <text id="This_is_Content-2" data-name="This is Content" transform="translate(389 298)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-74.81" y="0">This is Content</tspan></text>
-      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod-2" data-name="Lorem ipsum dolor sit amet, 
-consetetur sadipscing elitr, 
-sed diam nonumy eirmod" transform="translate(314 336)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="25">consetetur sadipscing elitr, </tspan><tspan x="0" y="50">sed diam nonumy eirmod</tspan></text>
+    <g id="Group_1195" data-name="Group 1195" transform="translate(609 666.322)">
+      <text id="Date_and_time" data-name="Date and time" transform="translate(75 21)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-72.24" y="0">Date and time</tspan></text>
+      <text id="Enter_the_proper_date_and_time_so_it_ll_be_helpful_for_the_transporter_to_manage_their_time_accordingly." data-name="Enter the proper date and time so it&apos;ll be helpful for the transporter to manage their time accordingly." transform="translate(0 42)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Enter the proper date and </tspan><tspan x="0" y="42">time so it&apos;ll be helpful for the </tspan><tspan x="0" y="67">transporter to manage their </tspan><tspan x="0" y="92">time accordingly.</tspan></text>
     </g>
-    <g id="Group_1196" data-name="Group 1196" transform="translate(130 329)">
-      <text id="This_is_Content-3" data-name="This is Content" transform="translate(389 298)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-74.81" y="0">This is Content</tspan></text>
-      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod-3" data-name="Lorem ipsum dolor sit amet, 
-consetetur sadipscing elitr, 
-sed diam nonumy eirmod" transform="translate(314 336)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="25">consetetur sadipscing elitr, </tspan><tspan x="0" y="50">sed diam nonumy eirmod</tspan></text>
+    <g id="Group_1196" data-name="Group 1196" transform="translate(376 938.299)">
+      <text id="Budget_and_weight" data-name="Budget and weight" transform="translate(96 21)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-96.24" y="0">Budget and weight</tspan></text>
+      <text id="Make_sure_to_enter_the_approx_weight_and_related_budget_expense_to_urge_more_bids_over_your_post." data-name="Make sure to enter the approx weight and related budget expense to urge more bids over your post." transform="translate(0 42)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Make sure to enter the </tspan><tspan x="0" y="42">approx weight and related </tspan><tspan x="0" y="67">budget expense to urge </tspan><tspan x="0" y="92">more bids over your post.</tspan></text>
     </g>
-    <g id="Group_1197" data-name="Group 1197" transform="translate(374 505)">
-      <text id="This_is_Content-4" data-name="This is Content" transform="translate(389 298)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-74.81" y="0">This is Content</tspan></text>
-      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod-4" data-name="Lorem ipsum dolor sit amet, 
-consetetur sadipscing elitr, 
-sed diam nonumy eirmod" transform="translate(314 336)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="25">consetetur sadipscing elitr, </tspan><tspan x="0" y="50">sed diam nonumy eirmod</tspan></text>
+    <g id="Group_1197" data-name="Group 1197" transform="translate(578 1270)">
+      <text id="Vehicle_type" data-name="Vehicle type" transform="translate(63 21)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-62.9" y="0">Vehicle type</tspan></text>
+      <text id="Depending_on_the_quantity_of_your_item_pick_the_vehicle_accordingly_otherwise_it_results_in_cost_quite_more_than_your_budget._" data-name="Depending on the quantity of your item, pick the vehicle accordingly, otherwise, it results in cost quite more than your budget.
+" transform="translate(0 42)" fill="#fff" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Depending on the quantity of your </tspan><tspan x="0" y="42">item, pick the vehicle accordingly, </tspan><tspan x="0" y="67">otherwise, it results in cost quite </tspan><tspan x="0" y="92">more than your budget.</tspan></text>
     </g>
   </g>
 </svg>

@@ -28,7 +28,7 @@ const BidCard = ({
 					<h2 className="bid-card-head">Place a Bid</h2>
 					<div className="bid-upper">
 						<h5 className="bid-label">{goodtype}</h5>
-						<PostStatus poststatus={true} />
+						<PostStatus poststatus={false} />
 					</div>
 					<div className="bid-table">
 						<div className="bid-table-section">

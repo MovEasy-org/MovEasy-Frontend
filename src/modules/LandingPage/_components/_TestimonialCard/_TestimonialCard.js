@@ -9,53 +9,50 @@ const _TestimonialCard = () => {
 				<div className="main-test">
 					<h4 className="test-head">Best Service Platform</h4>
 					<p className="test-para">
-						A competitive market is driving businesses to find the best truck
-						shipping companies in India to stay ahead of the curve. Diverse
-						terrains and conditions make it critical for companies in India to
-						search for a reliable transportation partner. However, abundant
-						options in the industry make the process of selection quite a
-						challenging task
+						“This is to formally thank you for the excellent services received
+						from your platform on our Residential Relocation. Things went
+						accurately consistent with the plan and that we were very gratified
+						with the professionalism of MovEasy. I used to be particularly
+						impressed by the courtesy and therefore the UI of your platform.
+						would like to recommend MovEasy to others.”
 					</p>
-					<p className="test-author">~ Mihir Verma, Indore</p>
+					<p className="test-author">~ MSMY, Indore</p>
 				</div>
-
 				<div className="main-test">
 					<h4 className="test-head">Best Service Platform</h4>
 					<p className="test-para">
-						A competitive market is driving businesses to find the best truck
-						shipping companies in India to stay ahead of the curve. Diverse
-						terrains and conditions make it critical for companies in India to
-						search for a reliable transportation partner. However, abundant
-						options in the industry make the process of selection quite a
-						challenging task
+						“This is to formally thank you for the excellent services received
+						from your platform on our Residential Relocation. Things went
+						accurately consistent with the plan and that we were very gratified
+						with the professionalism of MovEasy. I used to be particularly
+						impressed by the courtesy and therefore the UI of your platform.
+						would like to recommend MovEasy to others.”
 					</p>
-					<p className="test-author">~ Mihir Verma, Indore</p>
+					<p className="test-author">~ MSMY, Indore</p>
 				</div>
-
 				<div className="main-test">
 					<h4 className="test-head">Best Service Platform</h4>
 					<p className="test-para">
-						A competitive market is driving businesses to find the best truck
-						shipping companies in India to stay ahead of the curve. Diverse
-						terrains and conditions make it critical for companies in India to
-						search for a reliable transportation partner. However, abundant
-						options in the industry make the process of selection quite a
-						challenging task
+						“This is to formally thank you for the excellent services received
+						from your platform on our Residential Relocation. Things went
+						accurately consistent with the plan and that we were very gratified
+						with the professionalism of MovEasy. I used to be particularly
+						impressed by the courtesy and therefore the UI of your platform.
+						would like to recommend MovEasy to others.”
 					</p>
-					<p className="test-author">~ Mihir Verma, Indore</p>
+					<p className="test-author">~ MSMY, Indore</p>
 				</div>
-
 				<div className="main-test">
 					<h4 className="test-head">Best Service Platform</h4>
 					<p className="test-para">
-						A competitive market is driving businesses to find the best truck
-						shipping companies in India to stay ahead of the curve. Diverse
-						terrains and conditions make it critical for companies in India to
-						search for a reliable transportation partner. However, abundant
-						options in the industry make the process of selection quite a
-						challenging task
+						“This is to formally thank you for the excellent services received
+						from your platform on our Residential Relocation. Things went
+						accurately consistent with the plan and that we were very gratified
+						with the professionalism of MovEasy. I used to be particularly
+						impressed by the courtesy and therefore the UI of your platform.
+						would like to recommend MovEasy to others.”
 					</p>
-					<p className="test-author">~ Mihir Verma, Indore</p>
+					<p className="test-author">~ MSMY, Indore</p>
 				</div>
 			</div>
 		</div>
