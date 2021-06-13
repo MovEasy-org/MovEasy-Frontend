@@ -7,10 +7,10 @@ const WhyWrapper = () => {
 		<div className="why-wrapper" id="why-wrapper">
 			<h1 className="">Why MoveEasy</h1>
 			<div className="why-card">
-				<WhyMoveEasy image={whyImage} why="Blockchain technology" />
-				<WhyMoveEasy image={whyImage} why="Blockchain technology" />
-				<WhyMoveEasy image={whyImage} why="Blockchain technology" />
-				<WhyMoveEasy image={whyImage} why="Blockchain technology" />
+				<WhyMoveEasy image={whyImage} why="Biding System" />
+				<WhyMoveEasy image={whyImage} why="Safe & Secure" />
+				<WhyMoveEasy image={whyImage} why="No Middlemen" />
+				<WhyMoveEasy image={whyImage} why="Best Rates" />
 			</div>
 		</div>
 	);

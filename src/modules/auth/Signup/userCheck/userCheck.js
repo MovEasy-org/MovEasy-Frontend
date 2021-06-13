@@ -21,8 +21,8 @@ const userCheck = () => {
 									I'm a <span>Customer</span>
 								</h4>
 								<p>
-									Basic description of a normal user goes here, ye kaam manvi
-									aur sakshi krenge
+									You'll be apt to post a job, bid over it, and get ready with
+									the packed goods to move.
 								</p>
 							</div>
 						</div>
@@ -36,8 +36,8 @@ const userCheck = () => {
 									I'm a <span>Transporter</span>
 								</h4>
 								<p>
-									Basic description of a normal user goes here, ye kaam manvi
-									aur sakshi krenge
+									Wait for the post, and get ready along with your vehicle to
+									assist your customer.
 								</p>
 							</div>
 						</div>

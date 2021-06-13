@@ -45,6 +45,27 @@ const History = () => {
 			date: "12/01/2021",
 			time: "12:00 PM",
 		},
+		{
+			status: true,
+			from: "384 scheme71 near c21 mall, Indore-452008",
+			to: "384 scheme71 near c21 mall, Indore-452008",
+			date: "12/01/2021",
+			time: "12:00 PM",
+		},
+		{
+			status: false,
+			from: "384 scheme71 near c21 mall, Indore-452008",
+			to: "384 scheme71 near c21 mall, Indore-452008",
+			date: "12/01/2021",
+			time: "12:00 PM",
+		},
+		{
+			status: false,
+			from: "384 scheme71 near c21 mall, Indore-452008",
+			to: "384 scheme71 near c21 mall, Indore-452008",
+			date: "12/01/2021",
+			time: "12:00 PM",
+		},
 	];
 	return (
 		<>

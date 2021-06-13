@@ -14,7 +14,7 @@ const Hero = () => {
 	};
 
 	const increment = () => {
-		if (index < 2) {
+		if (index < 3) {
 			setIndex(index + 1);
 		} else {
 			setShowModal((prev) => !prev);
@@ -27,7 +27,7 @@ const Hero = () => {
 			<h2 className="get-started-head">{JsonData[index].title}</h2>
 			<p className="get-started-content">{JsonData[index].content}</p>
 			<div className="get-started-image">{JsonData[index].Image}</div>
-			{index === 2 ? (
+			{index === 3 ? (
 				<div className="modal-btns">
 					<div className="btn-ns">
 						<Button

@@ -17,7 +17,7 @@ import userCheck from "./modules/auth/Signup/userCheck/userCheck";
 const Routes = () => {
 	// fetch user type from local host
 
-	localStorage.setItem("userType", "L");
+	// localStorage.setItem("userType", "L");
 	// localStorage.setItem("userType", "TRANSPORTER");
 	// localStorage.setItem("userType", "CUSTOMER");
 

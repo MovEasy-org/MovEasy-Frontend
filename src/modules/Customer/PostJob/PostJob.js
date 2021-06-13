@@ -6,8 +6,30 @@ import Input from "../../../components/Input/Input";
 import Button from "../../../components/Button/Button";
 import CheckBox from "../../../components/CheckBox/CheckBox";
 import "./PostJob.scss";
+import { databasefb } from "./../../../firebase";
 
 const PostJob = () => {
+	// ********* push to DB *********
+	const addOrEdit = (obj) => {
+		databasefb
+			.child("posts")
+			.push(obj, (err) => {
+				if (err) console.log(err);
+			})
+			.then((docRef) => {
+				console.log("User ID: ", docRef.key);
+			});
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		toaster.success("Your Job is successfully posted!", {
+			description: "Transporters will bid on your post soon...",
+		});
+		addOrEdit(PostJob);
+	};
+
+	// ************************************************************
 	const Postcheckbox = [
 		"Tempo",
 		"Truck",
@@ -26,13 +48,10 @@ const PostJob = () => {
 		weight: "",
 		note: "",
 		vehicles: [],
+		uid: localStorage.getItem("uid"),
+		name: localStorage.getItem("name"),
+		email: localStorage.getItem("email"),
 	});
-
-	const handleSubmit = () => {
-		toaster.success("Your Job is successfully posted!", {
-			description: "Transporters will bid on your post soon...",
-		});
-	};
 
 	return (
 		<div className="postjob wrapper">
@@ -161,7 +180,7 @@ const PostJob = () => {
 						type="submit"
 						ButtonSize="btn-large"
 						ButtonStyle="btn-primary"
-						onClick={handleSubmit}
+						onClick={(e) => handleSubmit(e)}
 					>
 						<span> &#8594;</span>
 						Book a ride

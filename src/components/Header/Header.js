@@ -4,6 +4,11 @@ import { Avatar, Popover, Menu, Position } from "evergreen-ui";
 import Button1 from "../Button/Button";
 import "./Header.scss";
 
+const LogOut = () => {
+	localStorage.clear();
+	window.location.reload();
+};
+
 const Header = ({ isTransporter, isCustomer }) => {
 	if (isTransporter) return <NavbarTransporter />;
 	else if (isCustomer) return <NavbarCustomer />;
@@ -82,19 +87,21 @@ const NavbarCustomer = () => (
 							<Menu.Group>
 								<Menu.Item>
 									<div className="align-center-name">
-										<b>Manvi Jain</b>
+										<b>{localStorage.getItem("name")}</b>
 									</div>
 								</Menu.Item>
-								<Menu.Item>manvijain0888@gmail.com</Menu.Item>
+								<Menu.Item>{localStorage.getItem("email")}</Menu.Item>
 							</Menu.Group>
 							<Menu.Divider />
 							<Menu.Group>
-								<Menu.Item intent="danger">Log out</Menu.Item>
+								<Menu.Item intent="danger" onClick={LogOut}>
+									Log out
+								</Menu.Item>
 							</Menu.Group>
 						</Menu>
 					}
 				>
-					<Avatar name="Manvi Jain" size={50} />
+					<Avatar name={localStorage.getItem("name")} size={50} />
 				</Popover>
 			</Link>
 		</div>
@@ -126,17 +133,23 @@ const NavbarTransporter = () => (
 					content={
 						<Menu className="pop">
 							<Menu.Group>
-								<Menu.Item>Share...</Menu.Item>
-								<Menu.Item>Move...</Menu.Item>
+								<Menu.Item>
+									<div className="align-center-name">
+										<b>{localStorage.getItem("name")}</b>
+									</div>
+								</Menu.Item>
+								<Menu.Item>{localStorage.getItem("email")}</Menu.Item>
 							</Menu.Group>
 							<Menu.Divider />
 							<Menu.Group>
-								<Menu.Item intent="danger">Log out</Menu.Item>
+								<Menu.Item intent="danger" onClick={LogOut}>
+									Log out
+								</Menu.Item>
 							</Menu.Group>
 						</Menu>
 					}
 				>
-					<Avatar name="Manvi Jain" size={50} />
+					<Avatar name={localStorage.getItem("name")} size={50} />
 				</Popover>
 			</Link>
 		</div>

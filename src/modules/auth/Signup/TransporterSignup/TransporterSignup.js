@@ -4,15 +4,41 @@ import FormLayout from "../../../../components/FormLayout/FormLayout";
 import Input from "../../../../components/Input/Input";
 import Button from "../../../../components/Button/Button";
 import CheckBox from "./../../../../components/CheckBox/CheckBox";
+import { useHistory } from "react-router-dom";
+import { databasefb } from "./../../../../firebase";
 
 const TransporterSignup = () => {
+	let history = useHistory();
+	// ********* push to DB *********
+	const addOrEdit = (obj) => {
+		databasefb
+			.child("customers")
+			.push(obj, (err) => {
+				if (err) console.log(err);
+			})
+			.then((docRef) => {
+				console.log("User ID: ", docRef.key);
+				localStorage.setItem("uid", docRef.key);
+				localStorage.setItem("userType", "TRANSPORTER");
+				localStorage.setItem("name", user.name);
+				history.push("/");
+				window.location.reload();
+			});
+	};
+
+	const createUser = (e) => {
+		e.preventDefault();
+		addOrEdit(user);
+	};
+
 	const [user, setUser] = useState({
 		name: "",
-		// email: "",
 		phone: "",
-		// password: "",
 		vehicles: [],
 		vehicleNo: "",
+		usercat: "TRANSPORTER",
+		uid: localStorage.getItem("uid"),
+		email: localStorage.getItem("email"),
 	});
 	const Postcheckbox = [
 		"Tempo",
@@ -44,15 +70,6 @@ const TransporterSignup = () => {
 								state={user}
 								setState={setUser}
 							/>
-							{/* <Input
-								label="Email"
-								placeholder="Your email"
-								type="email"
-								name="email"
-								value={user.email}
-								state={user}
-								setState={setUser}
-							/> */}
 							<Input
 								label="Phone"
 								placeholder="Your phone"
@@ -62,15 +79,6 @@ const TransporterSignup = () => {
 								state={user}
 								setState={setUser}
 							/>
-							{/* <Input
-								label="Password"
-								placeholder="Your password"
-								type="password"
-								name="password"
-								value={user.password}
-								state={user}
-								setState={setUser}
-							/> */}
 
 							<div className="post-group">
 								<label className="post-label">Select Vehicles</label>
@@ -106,6 +114,7 @@ const TransporterSignup = () => {
 									type="submit"
 									ButtonSize="btn-large"
 									ButtonStyle="btn-link"
+									onClick={(e) => createUser(e)}
 								>
 									Sign up
 								</Button>

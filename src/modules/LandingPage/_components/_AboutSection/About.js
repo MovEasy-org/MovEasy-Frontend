@@ -10,11 +10,14 @@ const About = () => {
 			<div className="about-content">
 				<h1 className="about-head">About Us</h1>
 				<p className="about-para">
-					Orchid (OXT), an Ethereum (ERC-20) compliant token, is used to pay for
-					services on the Orchid network, a decentralized, peer-to-peer
-					marketplace for virtual private network (VPN) providers. Orchid users
-					purchase bandwidth with OXT and node providers receive OXT as rewards
-					for supplying bandwidth.
+					MovEasy A platform for imparting excellent services in packing and
+					moving segments. we've designed our services proficiently to satisfy
+					the utmost customer satisfaction, we make it our High priority to
+					deliver reliable, efficient & Hassle-free moving. We interface
+					customers to the most effective and most expert transporters. We give
+					the foremost credible and affordable rates employing a bidding system.
+					From booking our services to the delivery of your goods, we are
+					proactive, fast and easily good at our work.
 				</p>
 			</div>
 		</div>
